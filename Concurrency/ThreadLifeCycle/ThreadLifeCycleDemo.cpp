@@ -26,6 +26,14 @@ void ThreadLifeCycleDemo::test() {
     printf("Thomas patiently waits for Ashley to finish and join...\n");
 
     ashley.join();
+    //The main thread will sleep until the ashley finish.
+    //If remove ashley.join(), the main thread may finish and return before ashley thread,
+    //and will cause the program crash.
+    //At the end of main function, destructors of ashley is invoked,
+    //and the destructor of std::thread will check if this thread is joinable.
+    //If the thread is not detached and still active, it is joinable.
+    //If the thread is joinable, the destructor will invoke std::terminate(),
+    //cause the program crashes.
 
     printf("Ashely thread is joinable? %s\n",
            ashley.joinable() ? "true" : "false");

@@ -5,7 +5,7 @@
 #include <thread>
 #include <chrono>
 
-#include "execution_scheduling_demo.h"
+#include "ExecutionSchedulingDemo.h"
 
 bool Execution_Scheduling_Demo::chopping = true;
 
@@ -17,7 +17,7 @@ void Execution_Scheduling_Demo::vegetable_chopper(const char *name) {
     printf("%s chopped %u vegetables.\n", name, vegetable_count);
 }
 
-int Execution_Scheduling_Demo::test(){
+void Execution_Scheduling_Demo::test() {
     std::thread ashley(vegetable_chopper, "Ashley");
     std::thread thomas(vegetable_chopper, "Thomas");
 
@@ -29,6 +29,4 @@ int Execution_Scheduling_Demo::test(){
 
     ashley.join();
     thomas.join();
-
-    return 0;
 }

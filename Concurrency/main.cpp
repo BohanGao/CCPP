@@ -5,6 +5,7 @@
 #include "DetachedThread/DetachedThreadDemo.h"
 #include "DataRace/DataRaceDemo.h"
 #include "MutualExclusion/MutualExclusionDemo.h"
+#include "AtomicObject/AtomicObjectDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -16,7 +17,9 @@ int main() {
 
     //DataRaceDemo::test();
 
-    MutualExclusionDemo::test();
+    //MutualExclusionDemo::test();
+
+    AtomicObjectDemo::test();
 
     return 0;
 }

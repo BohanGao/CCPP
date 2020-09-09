@@ -7,6 +7,7 @@
 #include "MutualExclusion/MutualExclusionDemo.h"
 #include "AtomicObject/AtomicObjectDemo.h"
 #include "RecursiveMutex/RecursiveMutexDemo.h"
+#include "TryLock/TryLockDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -22,7 +23,10 @@ int main() {
 
     //AtomicObjectDemo::test();
 
-    RecursiveMutexDemo::testWithRecursiveMutex();
+    //RecursiveMutexDemo::testWithRecursiveMutex();
+
+    //TryLockDemo::testWithoutTryLock();
+    TryLockDemo::testWithTryLock();
 
     return 0;
 }

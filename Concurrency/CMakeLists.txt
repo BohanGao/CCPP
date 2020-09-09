@@ -3,4 +3,4 @@ project(Concurrency)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Concurrency main.cpp ExecutionScheduling/ExecutionSchedulingDemo.cpp ExecutionScheduling/ExecutionSchedulingDemo.h ThreadLifeCycle/ThreadLifeCycleDemo.cpp ThreadLifeCycle/ThreadLifeCycleDemo.h DetachedThread/DetachedThreadDemo.cpp DetachedThread/DetachedThreadDemo.h DataRace/DataRaceDemo.cpp DataRace/DataRaceDemo.h MutualExclusion/MutualExclusionDemo.cpp MutualExclusion/MutualExclusionDemo.h AtomicObject/AtomicObjectDemo.cpp AtomicObject/AtomicObjectDemo.h)
+add_executable(Concurrency main.cpp ExecutionScheduling/ExecutionSchedulingDemo.cpp ExecutionScheduling/ExecutionSchedulingDemo.h ThreadLifeCycle/ThreadLifeCycleDemo.cpp ThreadLifeCycle/ThreadLifeCycleDemo.h DetachedThread/DetachedThreadDemo.cpp DetachedThread/DetachedThreadDemo.h DataRace/DataRaceDemo.cpp DataRace/DataRaceDemo.h MutualExclusion/MutualExclusionDemo.cpp MutualExclusion/MutualExclusionDemo.h AtomicObject/AtomicObjectDemo.cpp AtomicObject/AtomicObjectDemo.h RecursiveMutex/RecursiveMutexDemo.cpp RecursiveMutex/RecursiveMutexDemo.h)

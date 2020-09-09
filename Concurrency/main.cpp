@@ -6,6 +6,7 @@
 #include "DataRace/DataRaceDemo.h"
 #include "MutualExclusion/MutualExclusionDemo.h"
 #include "AtomicObject/AtomicObjectDemo.h"
+#include "RecursiveMutex/RecursiveMutexDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -19,7 +20,9 @@ int main() {
 
     //MutualExclusionDemo::test();
 
-    AtomicObjectDemo::test();
+    //AtomicObjectDemo::test();
+
+    RecursiveMutexDemo::testWithRecursiveMutex();
 
     return 0;
 }

@@ -9,6 +9,7 @@
 #include "RecursiveMutex/RecursiveMutexDemo.h"
 #include "TryLock/TryLockDemo.h"
 #include "SharedMutex/SharedMutexDemo.h"
+#include "DeadLock/DeadLockDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -30,7 +31,11 @@ int main() {
     //TryLockDemo::testWithTryLock();
 
     //SharedMutexDemo::testWithoutSharedMutex();
-    SharedMutexDemo::testWithSharedMutex();
+    //SharedMutexDemo::testWithSharedMutex();
+
+    //DeadLockDemo::testDeadLock();
+    //DeadLockDemo::testWithPriority();
+    DeadLockDemo::testWithScopeLock();
 
     return 0;
 }

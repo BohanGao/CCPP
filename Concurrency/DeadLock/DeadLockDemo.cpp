@@ -49,7 +49,7 @@ void DeadLockDemo::eat(std::mutex & first_chopstick, std::mutex & second_chopsti
 
 void DeadLockDemo::eatWithScopeLock(std::mutex & first_chopstick, std::mutex & second_chopstick) {
     while(sushi_count>0){
-        std::scoped_lock(first_chopstick, second_chopstick);
+        std::scoped_lock scopedLock(first_chopstick, second_chopstick);
         //scope can achieve
         //1. acquire multiple locks at the same time;
         //2. automatic unlock when exit the scope

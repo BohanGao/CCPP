@@ -10,6 +10,7 @@
 #include "TryLock/TryLockDemo.h"
 #include "SharedMutex/SharedMutexDemo.h"
 #include "DeadLock/DeadLockDemo.h"
+#include "AbandonedLock/AbandondedLockDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -35,7 +36,10 @@ int main() {
 
     //DeadLockDemo::testDeadLock();
     //DeadLockDemo::testWithPriority();
-    DeadLockDemo::testWithScopeLock();
+    //DeadLockDemo::testWithScopeLock();
+
+    //AbandondedLockDemo::testAbandonedLock();
+    AbandondedLockDemo::testScopedLock();
 
     return 0;
 }

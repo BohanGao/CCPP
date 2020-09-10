@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
 project(Concurrency)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Concurrency main.cpp ExecutionScheduling/ExecutionSchedulingDemo.cpp ExecutionScheduling/ExecutionSchedulingDemo.h ThreadLifeCycle/ThreadLifeCycleDemo.cpp ThreadLifeCycle/ThreadLifeCycleDemo.h DetachedThread/DetachedThreadDemo.cpp DetachedThread/DetachedThreadDemo.h DataRace/DataRaceDemo.cpp DataRace/DataRaceDemo.h MutualExclusion/MutualExclusionDemo.cpp MutualExclusion/MutualExclusionDemo.h AtomicObject/AtomicObjectDemo.cpp AtomicObject/AtomicObjectDemo.h RecursiveMutex/RecursiveMutexDemo.cpp RecursiveMutex/RecursiveMutexDemo.h TryLock/TryLockDemo.cpp TryLock/TryLockDemo.h)
+add_executable(Concurrency main.cpp ExecutionScheduling/ExecutionSchedulingDemo.cpp ExecutionScheduling/ExecutionSchedulingDemo.h ThreadLifeCycle/ThreadLifeCycleDemo.cpp ThreadLifeCycle/ThreadLifeCycleDemo.h DetachedThread/DetachedThreadDemo.cpp DetachedThread/DetachedThreadDemo.h DataRace/DataRaceDemo.cpp DataRace/DataRaceDemo.h MutualExclusion/MutualExclusionDemo.cpp MutualExclusion/MutualExclusionDemo.h AtomicObject/AtomicObjectDemo.cpp AtomicObject/AtomicObjectDemo.h RecursiveMutex/RecursiveMutexDemo.cpp RecursiveMutex/RecursiveMutexDemo.h TryLock/TryLockDemo.cpp TryLock/TryLockDemo.h SharedMutex/SharedMutexDemo.cpp SharedMutex/SharedMutexDemo.h)

@@ -13,6 +13,7 @@
 #include "AbandonedLock/AbandondedLockDemo.h"
 #include "Starvation/StarvationDemo.h"
 #include "LiveLock/LiveLockDemo.h"
+#include "Condition/ConditionDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -46,7 +47,12 @@ int main() {
     //StarvationDemo::test();
 
     //LiveLockDemo::testWithoutYeild();
-    LiveLockDemo::testWithYeild();
+    //LiveLockDemo::testWithYeild();
+
+    //ConditionDemo::testWithoutCondition();
+    //ConditionDemo::testWithSignalOne();
+    //ConditionDemo::testWithSignalMultiple();
+    ConditionDemo::testWithBroadcast();
 
     return 0;
 }

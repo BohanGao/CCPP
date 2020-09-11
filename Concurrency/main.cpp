@@ -11,6 +11,7 @@
 #include "SharedMutex/SharedMutexDemo.h"
 #include "DeadLock/DeadLockDemo.h"
 #include "AbandonedLock/AbandondedLockDemo.h"
+#include "Starvation/StarvationDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -39,7 +40,9 @@ int main() {
     //DeadLockDemo::testWithScopeLock();
 
     //AbandondedLockDemo::testAbandonedLock();
-    AbandondedLockDemo::testScopedLock();
+    //AbandondedLockDemo::testScopedLock();
+
+    StarvationDemo::test();
 
     return 0;
 }

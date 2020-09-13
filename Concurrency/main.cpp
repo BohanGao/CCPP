@@ -14,6 +14,7 @@
 #include "Starvation/StarvationDemo.h"
 #include "LiveLock/LiveLockDemo.h"
 #include "Condition/ConditionDemo.h"
+#include "ProducerConsumer/ProducerConsumerDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -52,7 +53,9 @@ int main() {
     //ConditionDemo::testWithoutCondition();
     //ConditionDemo::testWithSignalOne();
     //ConditionDemo::testWithSignalMultiple();
-    ConditionDemo::testWithBroadcast();
+    //ConditionDemo::testWithBroadcast();
+
+    ProducerConsumerDemo::test();
 
     return 0;
 }

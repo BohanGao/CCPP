@@ -34,8 +34,8 @@ void ConditionDemo::testWithSignalOne() {
 void ConditionDemo::testWithSignalMultiple() {
     //might stuck with multiple threads waiting,
     //and the one which got waken up is not the one scheduled to execute next in condition var queue;
-    std::array<std::thread, 5> eaters;
-    for(int i=0;i<5;i++){
+    std::array<std::thread, 10> eaters;
+    for(int i=0;i<10;i++){
         eaters[i] = std::thread(eatWithSignalMultiple, i);
     }
     for(auto & eater : eaters){
@@ -44,8 +44,8 @@ void ConditionDemo::testWithSignalMultiple() {
 }
 
 void ConditionDemo::testWithBroadcast() {
-    std::array<std::thread, 5> eaters;
-    for(int i=0;i<5;i++){
+    std::array<std::thread, 10> eaters;
+    for(int i=0;i<10;i++){
         eaters[i] = std::thread(eatWithBroadcast, i);
     }
     for(auto & eater : eaters){
@@ -87,7 +87,7 @@ void ConditionDemo::eatWithSignalMultiple(int id) {
     int put_lid_back = 0;
     while (servings > 0) {
         std::unique_lock<std::mutex> lid_lock(pot_lid);//get lock
-        while (id != servings % 5 && servings > 0) {//condition not met
+        while (id != servings % 10 && servings > 0) {//condition not met
             put_lid_back++;
             food_taken.wait(lid_lock);//wait for condition var being signaled
         }//use while as the pattern for wait. If is not enough, as sometimes condition var might have spurious wake up.
@@ -104,7 +104,7 @@ void ConditionDemo::eatWithBroadcast(int id) {
     int put_lid_back = 0;
     while (servings > 0) {
         std::unique_lock<std::mutex> lid_lock(pot_lid);//get lock
-        while (id != servings % 5 && servings > 0) {//condition not met
+        while (id != servings % 10 && servings > 0) {//condition not met
             put_lid_back++;
             food_taken.wait(lid_lock);//wait for condition var being signaled
         }//use while as the pattern for wait. If is not enough, as sometimes condition var might have spurious wake up.

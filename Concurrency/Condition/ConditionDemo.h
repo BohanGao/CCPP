@@ -48,9 +48,12 @@ private:
 //1. Wake up all threads from condition variable queue
 //2. Also called notify all or wake all
 
-//If multiple threads is waiting for a condition var, and signal is called, the program might stuck,
-//if the signal is not sent to the thread who's scheduled to execute next in the condition variable queue.
+//If multiple threads is waiting for a condition var, and signal is called, the program might stuck depending in the condition of the while loop,
+//if the signal is not sent to the thread who's scheduled to execute next.
 //broadcast should be used instead.
+//in the example where 5 eater take turn from id0 to id4 taking the food. since notify_one randomly picks one waitng thread,
+//if thread 3 is waken up whereas it is not its turn yet, it will wait again to unlock the lock,
+//only this time, all other threads are also waiting, making the program stuck.
 
 //example - Shared Queue or Buffer
 //1. Thread first acquire the mutex to make sure only one thread is able to modify the queue at a time

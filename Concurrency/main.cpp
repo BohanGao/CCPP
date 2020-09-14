@@ -15,6 +15,7 @@
 #include "LiveLock/LiveLockDemo.h"
 #include "Condition/ConditionDemo.h"
 #include "ProducerConsumer/ProducerConsumerDemo.h"
+#include "Semaphore/SemaphoreDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -55,7 +56,9 @@ int main() {
     //ConditionDemo::testWithSignalMultiple();
     //ConditionDemo::testWithBroadcast();
 
-    ProducerConsumerDemo::test();
+    //ProducerConsumerDemo::test();
+
+    SemaphoreDemo::test();
 
     return 0;
 }

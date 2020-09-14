@@ -17,6 +17,7 @@
 #include "ProducerConsumer/ProducerConsumerDemo.h"
 #include "Semaphore/SemaphoreDemo.h"
 #include "RaceCondition/RaceConditionDemo.h"
+#include "Barrier/BarrierDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -61,7 +62,9 @@ int main() {
 
     //SemaphoreDemo::test();
 
-    RaceConditionDemo::test();
+    //RaceConditionDemo::test();
+
+    BarrierDemo::test();
 
     return 0;
 }

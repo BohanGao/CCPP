@@ -18,6 +18,7 @@
 #include "Semaphore/SemaphoreDemo.h"
 #include "RaceCondition/RaceConditionDemo.h"
 #include "Barrier/BarrierDemo.h"
+#include "Latch/LatchDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -64,7 +65,9 @@ int main() {
 
     //RaceConditionDemo::test();
 
-    BarrierDemo::test();
+    //BarrierDemo::test();
+
+    LatchDemo::test();
 
     return 0;
 }

@@ -6,7 +6,6 @@
 #define CONCURRENCY_BARRIERDEMO_H
 
 #include <mutex>
-#include <boost/thread/thread.hpp>
 #include <boost/thread/barrier.hpp>
 
 class BarrierDemo {

@@ -20,6 +20,7 @@
 #include "Barrier/BarrierDemo.h"
 #include "Latch/LatchDemo.h"
 #include "ThreadPool/ThreadPoolDemo.h"
+#include "Future/FutureDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -70,7 +71,9 @@ int main() {
 
     //LatchDemo::test();
 
-    ThreadPoolDemo::test();
+    //ThreadPoolDemo::test();
+
+    FutureDemo::test();
 
     return 0;
 }

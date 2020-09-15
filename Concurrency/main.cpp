@@ -19,6 +19,7 @@
 #include "RaceCondition/RaceConditionDemo.h"
 #include "Barrier/BarrierDemo.h"
 #include "Latch/LatchDemo.h"
+#include "ThreadPool/ThreadPoolDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -67,7 +68,9 @@ int main() {
 
     //BarrierDemo::test();
 
-    LatchDemo::test();
+    //LatchDemo::test();
+
+    ThreadPoolDemo::test();
 
     return 0;
 }

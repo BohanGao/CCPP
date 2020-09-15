@@ -21,6 +21,7 @@
 #include "Latch/LatchDemo.h"
 #include "ThreadPool/ThreadPoolDemo.h"
 #include "Future/FutureDemo.h"
+#include "DivideAndConquer/DivideAndConquerDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -73,7 +74,9 @@ int main() {
 
     //ThreadPoolDemo::test();
 
-    FutureDemo::test();
+    //FutureDemo::test();
+
+    DivideAndConquerDemo::test();
 
     return 0;
 }

@@ -25,6 +25,7 @@
 #include "MeasureSpeedup/MeasureSpeedupDemo.h"
 #include "MatrixMultiply/MatrixMultipleDemo.h"
 #include "MergeSort/MergeSortDemo.h"
+#include "DownloadImages/DownloadImagesDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -85,7 +86,9 @@ int main() {
 
     //MatrixMultipleDemo::test();
 
-    MergeSortDemo::test();
+    //MergeSortDemo::test();
+
+    DownloadImagesDemo::test();
 
     return 0;
 }

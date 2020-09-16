@@ -22,6 +22,7 @@
 #include "ThreadPool/ThreadPoolDemo.h"
 #include "Future/FutureDemo.h"
 #include "DivideAndConquer/DivideAndConquerDemo.h"
+#include "MeasureSpeedup/MeasureSpeedupDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -76,7 +77,9 @@ int main() {
 
     //FutureDemo::test();
 
-    DivideAndConquerDemo::test();
+    //DivideAndConquerDemo::test();
+
+    MeasureSpeedupDemo::test();
 
     return 0;
 }

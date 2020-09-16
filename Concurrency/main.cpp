@@ -24,6 +24,7 @@
 #include "DivideAndConquer/DivideAndConquerDemo.h"
 #include "MeasureSpeedup/MeasureSpeedupDemo.h"
 #include "MatrixMultiply/MatrixMultipleDemo.h"
+#include "MergeSort/MergeSortDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -82,7 +83,9 @@ int main() {
 
     //MeasureSpeedupDemo::test();
 
-    MatrixMultipleDemo::test();
+    //MatrixMultipleDemo::test();
+
+    MergeSortDemo::test();
 
     return 0;
 }

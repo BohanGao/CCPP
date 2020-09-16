@@ -23,6 +23,7 @@
 #include "Future/FutureDemo.h"
 #include "DivideAndConquer/DivideAndConquerDemo.h"
 #include "MeasureSpeedup/MeasureSpeedupDemo.h"
+#include "MatrixMultiply/MatrixMultipleDemo.h"
 
 int main() {
     //Execution_Scheduling_Demo::test();
@@ -79,7 +80,9 @@ int main() {
 
     //DivideAndConquerDemo::test();
 
-    MeasureSpeedupDemo::test();
+    //MeasureSpeedupDemo::test();
+
+    MatrixMultipleDemo::test();
 
     return 0;
 }
